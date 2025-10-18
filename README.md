@@ -80,5 +80,5 @@ with open('xgb_model.pkl', 'wb') as f:
 with open('scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 
-📚 وصف المشروع / Project Descriptio
+📚   Project Descriptio
 This application uses AI techniques to analyze phone specifications (screen size, battery, camera, memory) and estimate the expected price range. It helps users make smart buying decisions and know the appropriate price before purchasing.
