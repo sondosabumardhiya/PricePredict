@@ -82,5 +82,5 @@ with open('scaler.pkl', 'wb') as f:
 
 📚 وصف المشروع / Project Description
 
-English:
+
 This application uses AI techniques to analyze phone specifications (screen size, battery, camera, memory) and estimate the expected price range. It helps users make smart buying decisions and know the appropriate price before purchasing.
