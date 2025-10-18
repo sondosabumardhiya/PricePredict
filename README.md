@@ -67,7 +67,7 @@ Response:
 {
   "Predicted Price Range": 2
 }
-💾 حفظ النموذج / Saving the Model
+💾  Saving the Model
 
  saved the trained model and scaler using pickle:
 import pickle
