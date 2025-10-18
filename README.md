@@ -1,7 +1,7 @@
 # PricePredict
 This application uses artificial intelligence techniques to analyze smartphone specifications such as screen size, battery capacity, camera, and memory to estimate the expected price range of the device. It helps you make a smart purchasing decision and know the appropriate price before buying.
 
-# Price Predictor - تنبئ بسعر
+# Price Predictor 
 
 ## Overview
 This application predicts the **expected price range** of smartphones based on specifications like RAM, screen resolution, battery, and front camera. Users can input specs through a **web form** or interact with the **API**.
