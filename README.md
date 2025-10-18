@@ -69,7 +69,7 @@ Response:
 }
 💾 حفظ النموذج / Saving the Model
 
-We saved the trained model and scaler using pickle:
+ saved the trained model and scaler using pickle:
 import pickle
 
 # Save model
@@ -80,7 +80,5 @@ with open('xgb_model.pkl', 'wb') as f:
 with open('scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 
-📚 وصف المشروع / Project Description
-
-
+📚 وصف المشروع / Project Descriptio
 This application uses AI techniques to analyze phone specifications (screen size, battery, camera, memory) and estimate the expected price range. It helps users make smart buying decisions and know the appropriate price before purchasing.
