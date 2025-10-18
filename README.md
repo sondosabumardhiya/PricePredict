@@ -20,11 +20,8 @@ This application predicts the **expected price range** of smartphones based on s
 ## Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/your-username/price-predictor.git
+https://github.com/sondosabumardhiya/PricePredict/edit/main/README.md
 cd price-predictor
-
-
 
 
 Run the Flask app:
@@ -35,7 +32,7 @@ python app.py
 5.Use the form to input mobile specifications and get a predicted price range.
 
 
-*Django Version (Optional)
+*Django Version 
 
 If you prefer Django, the project initially used it:
 
