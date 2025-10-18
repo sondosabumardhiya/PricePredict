@@ -1,81 +1,117 @@
-# PricePredict
-This application uses artificial intelligence techniques to analyze smartphone specifications such as screen size, battery capacity, camera, and memory to estimate the expected price range of the device. It helps you make a smart purchasing decision and know the appropriate price before buying.
 
-# Price Predictor 
 
-## Overview
-This application predicts the **expected price range** of smartphones based on specifications like RAM, screen resolution, battery, and front camera. Users can input specs through a **web form** or interact with the **API**.
+# 📱 Mobile Price Prediction using Django & Random Forest
 
----
+## 🧠 Overview
 
-## Features
-- Predict smartphone price range using **Random Forest** model.
-- Provides a **web interface** for interactive prediction.
-- Offers a **REST API** endpoint to integrate with other applications.
-- Saves predictions for later use.
-- Supports **scaling** of input features for accurate predictions.
+This project is a **Django-based web application** that predicts mobile phone prices based on hardware specifications using a **Random Forest Machine Learning model**.
+The system provides a simple web interface to input phone specs and get a predicted price range instantly.
 
 ---
 
-## Installation
+## ⚙️ Technologies Used
 
-1. Clone the repository:
-https://github.com/sondosabumardhiya/PricePredict/edit/main/README.md
-cd price-predictor
+| Category                 | Tools                            |
+| ------------------------ | -------------------------------- |
+| Framework                | **Django**                       |
+| Machine Learning         | **scikit-learn**, **joblib**     |
+| Data Processing          | **pandas**, **numpy**            |
+| Visualization (Optional) | **matplotlib**                   |
+| Frontend                 | **HTML**, **CSS**, **Bootstrap** |
 
+---
 
-Run the Flask app:
-python app.py
+## 🧩 Project Structure
 
-4.Open in browser: http://127.0.0.1:5000/
+```
+📂 myproject/
+│
+├── manage.py
+├── db.sqlite3
+├── random_forest_model1.pkl       # Saved ML model
+├── scaler1.pkl                    # Scaler used for preprocessing
+│
+├── 📁 myapp/                       # Main app
+│   ├── views.py                    # Prediction functions
+│   ├── urls.py                     # Page routes
+│   ├── models.py                   # (Optional - if saving data)
+│   └── templates/
+│       ├── home.html               # Input form page
+│       └── prediction.html         # Result display page
+│
+├── 📁 static/                      # Design files (CSS / images)
+│   └── pict2.jpg                   # Example background image
+│
+└                    
+```
 
-5.Use the form to input mobile specifications and get a predicted price range.
+---
 
+## 🚀 How to Run
 
-*Django Version 
+### 1️⃣ Install Requirements
 
-If you prefer Django, the project initially used it:
+```bash
+pip install django pandas numpy scikit-learn matplotlib joblib
+```
 
-Models and forms handle user input
+### 2️⃣ Run the Server
 
-Views handle model inference and scaling
+```bash
+python manage.py runserver
+```
 
-Admin panel to view saved predictions
+Open in your browser:
 
-Excel export of predictions
+```
+http://127.0.0.1:8000/
+```
 
-To use Django, configure views.py, urls.py, templates, and load the saved pickle model and scaler.
+---
 
-🧮 API Usage
+## 🧮 How It Works
 
-Endpoint: /predict_api
-Method: POST
-Content-Type: application/json
+1. The user enters phone specifications on the homepage.
+2. Django reads the values and sends them to the saved model (`random_forest_model1.pkl`).
+3. The model predicts the appropriate price category (Low – Medium – High – Very High).
+4. The result is displayed clearly on the **prediction.html** page.
 
-Example JSON payload:
-{
-  "ram": 2048,
-  "fc": 5,
-  "px_width": 720,
-  "px_height": 1280,
-  "battery_power": 4000
-}
-Response:
-{
-  "Predicted Price Range": 2
-}
-💾  Saving the Model
+---
 
- saved the trained model and scaler using pickle:
-import pickle
+## 📁 Important Files
 
-# Save model
-with open('xgb_model.pkl', 'wb') as f:
-    pickle.dump(xgb_model, f)
+| File                       | Purpose                            |
+| -------------------------- | ---------------------------------- |
+| `random_forest_model1.pkl` | Saved Random Forest model          |
+| `scaler1.pkl`              | Data scaler used before prediction |
+| `home.html`                | Input form page                    |
+| `prediction.html`          | Result display page                |
 
-# Save scaler
-with open('scaler.pkl', 'wb') as f:
-    pickle.dump(scaler, f)
+---
 
-📚   Project Descriptio
-This application uses AI techniques to analyze phone specifications (screen size, battery, camera, memory) and estimate the expected price range. It helps users make smart buying decisions and know the appropriate price before purchasing.
+## 🌟 Example
+
+🧩 User inputs the following values:
+
+* RAM = 6 GB
+* Battery = 4000 mAh
+* Camera = 12 MP
+* Storage = 128 GB
+
+Output:
+
+> 💰 **Predicted Price Range: High**
+
+---
+
+## 🧑‍💻 Author
+
+**Sondos**
+Project built with ❤️ using **Django** and **Machine Learning**.
+
+---
+
+## 📜 License
+
+Open-source for learning and research purposes.
+
