@@ -1,10 +1,10 @@
 
 
-# 📱 Mobile Price Prediction using Django & Random Forest
+# 📱 Price Prediction using Django & Random Forest
 
 ## 🧠 Overview
 
-This project is a **Django-based web application** that predicts mobile phone prices based on hardware specifications using a **Random Forest Machine Learning model**.
+This project is a **Django-based web application** that predicts  prices based on hardware specifications using a **Random Forest Machine Learning model**.
 The system provides a simple web interface to input phone specs and get a predicted price range instantly.
 
 ---
@@ -36,8 +36,8 @@ The system provides a simple web interface to input phone specs and get a predic
 │   ├── urls.py                     # Page routes
 │   ├── models.py                   # (Optional - if saving data)
 │   └── templates/
-│       ├── home.html               # Input form page
-│       └── prediction.html         # Result display page
+│       ├── home.html              
+│       └── prediction.html        
 │
 ├── 📁 static/                      # Design files (CSS / images)
 │   └── pict2.jpg                   # Example background image
@@ -73,7 +73,7 @@ http://127.0.0.1:8000/
 
 1. The user enters phone specifications on the homepage.
 2. Django reads the values and sends them to the saved model (`random_forest_model1.pkl`).
-3. The model predicts the appropriate price category (Low – Medium – High – Very High).
+3. The model predicts the appropriate price category ((1)Low –(2) Medium –(3) High ).
 4. The result is displayed clearly on the **prediction.html** page.
 
 ---
@@ -84,8 +84,8 @@ http://127.0.0.1:8000/
 | -------------------------- | ---------------------------------- |
 | `random_forest_model1.pkl` | Saved Random Forest model          |
 | `scaler1.pkl`              | Data scaler used before prediction |
-| `home.html`                | Input form page                    |
-| `prediction.html`          | Result display page                |
+| `home.html`                | Information about the application  |
+| `prediction.html`          | Input & Result display page        |
 
 ---
 
@@ -100,7 +100,7 @@ http://127.0.0.1:8000/
 
 Output:
 
-> 💰 **Predicted Price Range: High**
+> 💰 **Predicted Price Range: (3) High**
 
 ---
 
