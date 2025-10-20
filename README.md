@@ -73,7 +73,7 @@ http://127.0.0.1:8000/
 
 1. The user enters phone specifications on the homepage.
 2. Django reads the values and sends them to the saved model (`random_forest_model1.pkl`).
-3. The model predicts the appropriate price category ((1)Low –(2) Medium –(3) High ).
+3. The model predicts the appropriate price category ((0)Low –(1) Medium –(2) High -(3)very High).
 4. The result is displayed clearly on the **prediction.html** page.
 
 ---
@@ -100,7 +100,7 @@ http://127.0.0.1:8000/
 
 Output:
 
-> 💰 **Predicted Price Range: (3) High**
+> 💰 **Predicted Price Range: (2) High**
 
 ---
 
